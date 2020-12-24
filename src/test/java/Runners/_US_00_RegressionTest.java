@@ -21,7 +21,7 @@ import org.testng.annotations.Parameters;
 )
 public class _US_00_RegressionTest extends AbstractTestNGCucumberTests {
 
-    @BeforeClass
+   /* @BeforeClass
     @Parameters("browser")
     public static void beforeClass(String browser)
     {
@@ -40,6 +40,6 @@ public class _US_00_RegressionTest extends AbstractTestNGCucumberTests {
         Reporter.setSystemInfo("Gorev:", "Proje Bölüm-3.7.");
         Reporter.setTestRunnerOutput("Test excetuion Cucumber report");
 
-    }
+    }*/
 
 }

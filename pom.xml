@@ -130,7 +130,7 @@
                         <configuration>
                             <includes>
                                 <!-- for  run class or classes-->
-                                <include>**/_US_00_SmokeTest</include>
+                                <include>**/_US_00_RegressionTest</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
