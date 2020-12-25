@@ -118,10 +118,7 @@
 
 
 
-    <profiles>
 
-        <profile>
-            <id>Regression</id>
             <build>
                 <plugins>
                     <plugin>
@@ -138,7 +135,5 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
 
-    </profiles>
 </project>
