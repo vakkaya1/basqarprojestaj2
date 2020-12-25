@@ -48,6 +48,7 @@ public class Driver {
                     break;
 
                 default:
+
                     WebDriverManager.chromedriver().setup();
 
                     ChromeOptions options = new ChromeOptions();
