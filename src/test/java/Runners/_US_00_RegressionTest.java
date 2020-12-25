@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 
 @CucumberOptions(
        tags = {"@RegressionTest"},
-        features = {"src\\test\\java\\FeatureFiles"},
+        features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
         dryRun = false
      //   plugin = {
