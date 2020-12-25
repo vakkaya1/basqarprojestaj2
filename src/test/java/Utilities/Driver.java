@@ -34,7 +34,7 @@ public class Driver {
         // eğer browser adı gelmezse
         if (threadBrowserName.get()==null)
         {
-            threadBrowserName.set("firefox");
+            threadBrowserName.set("chrome");
         }
 
         if (threadDriver.get() == null)
