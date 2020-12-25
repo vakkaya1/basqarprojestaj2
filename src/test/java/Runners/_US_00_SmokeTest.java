@@ -15,7 +15,7 @@ import org.testng.annotations.Parameters;
         glue = {"StepDefinitions"},
         dryRun = false,
         plugin = {
-                "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportRegression.html"
+             //   "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportRegression.html"
                 // oluşturalacak raporun yeri ve adı veriliyor.
         }
 )

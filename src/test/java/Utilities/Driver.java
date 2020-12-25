@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Driver {
@@ -48,9 +49,12 @@ public class Driver {
 
                 default:
                     WebDriverManager.chromedriver().setup();
-                    threadDriver.set( new ChromeDriver() );
-                    break;
 
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400"); //width, height
+
+                    threadDriver.set( new ChromeDriver(options) );
+                    break;
             }
         }
         return threadDriver.get();
