@@ -106,6 +106,14 @@
             <version>5.5.12</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.1.0</version>
+            <scope>compile</scope>
+        </dependency>
+
     </dependencies>
 
 
@@ -123,7 +131,7 @@
                         <configuration>
                             <includes>
                                 <!-- for  run class or classes-->
-                                <include>**/_US_00_RegressionTest</include>
+                                <include>**/_US_00_RegressionTest.java</include>
                             </includes>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
