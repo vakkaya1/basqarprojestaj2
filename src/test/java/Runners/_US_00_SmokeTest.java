@@ -17,6 +17,9 @@ import org.testng.annotations.Parameters;
         plugin = {
              //   "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/ExtentReportRegression.html"
                 // oluşturalacak raporun yeri ve adı veriliyor.
+                //basit rapor oluşturan plugin  // bu bölüm sonradan jenkins report için eklendi
+                "html:target/cucumber-report",
+                "json:target/cucumber.json"
         }
 )
 public class _US_00_SmokeTest extends AbstractTestNGCucumberTests {
